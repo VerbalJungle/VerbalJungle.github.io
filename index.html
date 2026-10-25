@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VerbalJungle // Code & Canvas</title>
+
+  <style>
+    /* <== Root ==>*/
+    :root {
+      --bg: #0b1510;
+      --card-bg: #14241d;
+      --accent-green: #38ef7d;
+      --accent-orange: #ff764a;
+      --text-main: #f0f7f3;
+      --text-muted: #8ea397;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* <== Body and Header ==>*/
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 60px;
+      border-bottom: 2px dashed var(--card-bg);
+      padding-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      color: var(--accent-green);
+      letter-spacing: -1px;
+    }
+
+    .tagline {
+      color: var(--accent-orange);
+      font-family: monospace;
+      font-size: 1.1rem;
+      margin-top: 5px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin: 40px 0 20px 0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* <== Grid ==>*/
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    /* <== Cards ==>*/
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: transform 0.2s, border-color 0.2s;
+      flex-grow: 1;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: var(--accent-green);
+    }
+
+    .card h3 { margin-bottom: 8px; }
+
+    .badge {
+      display: inline-block;
+      font-family: monospace;
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 4px;
+      background: rgba(56, 239, 125, 0.15);
+      color: var(--accent-green);
+      margin-bottom: 12px;
+    }
+
+    /* <== Link Container ==>*/
+    .clickable {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      text-decoration: none !important;
+      color: inherit
+    }
+
+    .clickable * {
+      text-decoration: none !important;
+    }
+
+    /* <== Following COntent, dont be curious ==>*/
+
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>VerbalJungle</h1>
+  <p class="tagline">// Ich bin mir nicht 100% sicher was aus dieser Website wird, aber mal schauen</p>
+</header>
+
+<section>
+  <h2>🛠 Software & Protokolle</h2>
+  <div class="project-grid">
+    <a href="https://github.com/VerbalJungle/FUTO-Transformer-DE" class="clickable">
+      <div class="card">
+        <span class="badge">???</span>
+        <h3>Rustle</h3>
+        <p>???</p>
+      </div>
+    </a>
+    <a href="https://github.com/VerbalJungle/FUTO-Transformer-DE" class="clickable">
+      <div class="card">
+        <span class="badge">Mobile / Python</span>
+        <h3>FUTO-Transformer-DE</h3>
+        <p>Kompaktes open weight Transformer-Modell für Textvorhersage im FUTO Keyboard</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+</body>
+</html>
