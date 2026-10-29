@@ -6,7 +6,6 @@
   <title>VerbalJungle // Code & Canvas</title>
 
   <style>
-    /* <== Root ==>*/
     :root {
       --bg: #0b1510;
       --card-bg: #14241d;
@@ -17,8 +16,6 @@
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    /* <== Body and Header ==>*/
     body {
       background-color: var(--bg);
       color: var(--text-main);
@@ -56,14 +53,13 @@
       gap: 12px;
     }
 
-    /* <== Grid ==>*/
+    /* Grid für Projekte */
     .project-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 20px;
     }
 
-    /* <== Cards ==>*/
     .card {
       background: var(--card-bg);
       border-radius: 12px;
@@ -91,7 +87,6 @@
       margin-bottom: 12px;
     }
 
-    /* <== Link Container ==>*/
     .clickable {
       display: flex;
       flex-direction: column;
@@ -104,8 +99,6 @@
       text-decoration: none !important;
     }
 
-    /* <== Following COntent, dont be curious ==>*/
-
 
   </style>
 </head>
@@ -113,24 +106,24 @@
 
 <header>
   <h1>VerbalJungle</h1>
-  <p class="tagline">// Ich bin mir nicht 100% sicher was aus dieser Website wird, aber mal schauen</p>
+  <p class="tagline">// Welcome to my little project page</p>
 </header>
 
 <section>
-  <h2>🛠 Software-Projekte</h2>
+  <h2>🛠 Software & Protokolle</h2>
   <div class="project-grid">
-    <a href="https://github.com/VerbalJungle" class="clickable">
+    <a href="https://github.com/VerbalJungle/FUTO-Transformer-DE" class="clickable">
       <div class="card">
-        <span class="badge">???</span>
+        <span class="badge">Crossplattform / Flutter + Rust</span>
         <h3>Rustle</h3>
-        <p>???</p>
+        <p>Open Source crossplattform P2P file sharing system. Currently working in Linux and Android, Windows and iOS(as far as possible) planned</p>
       </div>
     </a>
     <a href="https://github.com/VerbalJungle/FUTO-Transformer-DE" class="clickable">
       <div class="card">
         <span class="badge">Mobile / Python</span>
         <h3>FUTO-Transformer-DE</h3>
-        <p>Kompaktes open weight Transformer-Modell für Textvorhersage im FUTO Keyboard</p>
+        <p>Compact open weight text prediction model for the german language in on the FUTO-Keybaord</p>
       </div>
     </a>
   </div>
